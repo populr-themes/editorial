@@ -1,20 +1,20 @@
 $(document).on('pop-initialized', function(){
-  $.fancybox.init();
+  // $.fancybox.init();
 
-  $('.asset-type-imagegroup').live('initialize', function(e, asset){
-    $(this).find('a.fancybox').fancybox({
-      type: 'image',
-      centerOnScroll: true
-    });
-  });
+  // $('.asset-type-imagegroup').live('initialize', function(e, asset){
+  //   $(this).find('a.fancybox').fancybox({
+  //     type: 'image',
+  //     centerOnScroll: true
+  //   });
+  // });
 
-  $('.columnizer-row:not(.columnizer-cols1) .asset:not(.asset-type-text)').live('initialize', function(e, asset){
-    fixBaseline(e.currentTarget);
-  });
+  // $('.columnizer-row:not(.columnizer-cols1) .asset:not(.asset-type-text)').live('initialize', function(e, asset){
+  //   fixBaseline(e.currentTarget);
+  // });
 
-  $('.columnizer-row:not(.columnizer-cols1) .asset:not(.asset-type-text)').live('destroy', function(e, asset){
-    /* fixBaseline(e.currentTarget); */
-  });
+  // $('.columnizer-row:not(.columnizer-cols1) .asset:not(.asset-type-text)').live('destroy', function(e, asset){
+  //   fixBaseline(e.currentTarget);
+  // });
 });
 
 // Baseline Fix
